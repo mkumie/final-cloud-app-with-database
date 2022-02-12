@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 """
 
 import os
+from unittest.mock import DEFAULT
 
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -125,3 +126,4 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 MEDIA_ROOT = os.path.join(STATIC_ROOT, 'media')
 MEDIA_URL = '/media/'
 
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
