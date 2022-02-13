@@ -113,6 +113,15 @@ def enroll(request, course_id):
 #def submit(request, course_id):
 
 
+def submit(request, course_id):
+
+    course = get_object_or_404(Course, pk=course_id)
+    user = request.user
+    enrollment = get_object_or_404(Enrollment, Enrollment.objects.filter(user=user, course=course))
+
+    
+
+
 # <HINT> A example method to collect the selected choices from the exam form from the request object
 #def extract_answers(request):
 #    submitted_anwsers = []
