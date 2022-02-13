@@ -119,7 +119,7 @@ def submit(request, course_id):
     user = request.user
     enrollment = get_object_or_404(Enrollment, Enrollment.objects.filter(user=user, course=course))
 
-    
+    return None
 
 
 # <HINT> A example method to collect the selected choices from the exam form from the request object

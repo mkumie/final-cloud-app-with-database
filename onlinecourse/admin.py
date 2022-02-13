@@ -37,12 +37,12 @@ class LessonAdmin(admin.ModelAdmin):
 
 
 class QuestionAdmin(admin.ModelAdmin):
-    list_display = ['title']
+    list_display = ['course']
 
 
 
 class ChoiceAdmin(admin.ModelAdmin):
-    list_display = ['title']
+    list_display = ['question']
 
 
 

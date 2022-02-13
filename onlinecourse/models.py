@@ -108,7 +108,7 @@ class Enrollment(models.Model):
     # question grade/mark
 
 class Question(models.Model):
-    lesson = models.ForeignKey(Lesson, on_delete=models.CASCADE)
+    course = models.ForeignKey(Course, on_delete=models.CASCADE)
     question_text = models.CharField(max_length=1000, default="Write your question here...")
     grade = models.FloatField(default=0.0)
 
